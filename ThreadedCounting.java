@@ -37,7 +37,7 @@ public class ThreadedCounting {
     				counterThread1.setCanCallCount(true);
     				try {
 						counter.wait();
-					} catch (InterruptedException e) {
+				    } catch (InterruptedException e) {
 					}
     			}
     			else if ((i % constantDifference) == 2) {
